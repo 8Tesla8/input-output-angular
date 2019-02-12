@@ -5,13 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
 
-  constructor() { }
+  public childTitle: string = "child title";
 
-  public childTitle: string = "input child title";
+  public clickCount: number = 0;
 
-  ngOnInit() {
+  public name: string = "child name";
+
+  onCountChanged(count: number): void {
+    this.clickCount = count;
   }
-
 }

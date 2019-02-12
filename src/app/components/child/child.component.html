@@ -1,5 +1,11 @@
-<p>
-  child works!
-</p>
+<br> <br>
 
-<p> Title: {{_title}} </p>  
+<h2>child.component </h2>
+
+<p> Title: {{title}} </p>  
+
+<button (click)="countChange(clickCount)">change count</button>
+
+<br>
+
+<input type="text" [(ngModel)]="childName" (ngModelChange)="nameChange($event)"> 
