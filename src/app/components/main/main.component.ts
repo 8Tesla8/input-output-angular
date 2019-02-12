@@ -9,6 +9,8 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
+  public childTitle: string = "input child title";
+
   ngOnInit() {
   }
 
